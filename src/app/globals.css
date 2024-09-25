@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #0a0a0a;
+    --background: #ffffff;
+    --sorange:#f8a721;
+    --saccent:#20aaa3;
+    --sdarkblue:#040435;
+    --sgray:#ececec;
+    --sprimary:#004a84;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  .orangeBtn {
+   @apply bg-sorange py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-transparent text-white hover:text-sorange capitalize cursor-pointer
+  }
+  .accentBtn {
+    @apply bg-saccent py-2 px-4 rounded-md text-center border-2 border-saccent hover:bg-transparent text-white hover:text-saccent capitalize cursor-pointer
+  }
+  .rangeBtnSec{
+    @apply bg-transparent py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-sorange text-sorange hover:text-white capitalize cursor-pointer
+  }
+}
