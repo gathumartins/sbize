@@ -8,7 +8,10 @@ import {
 } from "@/components/ui/card"
 
 function CohortCard({data}:any) {
-    let bg = data.node.categoriesFields.featuredImage.node.mediaItemUrl;
+    let bg = '';
+    if(data.node.categoriesFields.featuredImage !== null){
+      bg=data.node.categoriesFields.featuredImage.node.mediaItemUrl;
+    }
   return (
     <Card>
         <CardHeader className="h-[180px] mb-4 bg-no-repeat bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${bg})` }}>

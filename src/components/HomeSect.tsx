@@ -13,13 +13,6 @@ function HomeSect({data}:any) {
                 <iframe allow='fullscreen' className="w-full aspect-video rounded-lg" src={data.sectionVideo}></iframe>
             </div>
         )}
-        {/* {
-            data.sectionImage !== null && (
-                 <figure className="group-odd:hidden w-full md:w-3/4">
-                    <img src={data.sectionImage} alt="Explore Kenya" className='rounded-md shadow-lg'/>
-                </figure>
-                    )
-        } */}
         </article>
     </section>
   )

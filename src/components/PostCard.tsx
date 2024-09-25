@@ -8,11 +8,13 @@ import {
 } from "@/components/ui/card"
 
 function PostCard({post, catSlug}:any) {
-    // let bg= post.node.featuredImage
-    // style={{ backgroundImage: `url(${bg})` }}
+    let bg= '';
+    if(post.node.featuredImage !== null){
+      bg = post.node.featuredImage.node.mediaItemUrl;
+    }
   return (
         <Card>
-        <CardHeader className="h-[180px] mb-4 bg-no-repeat bg-cover bg-center rounded-t-lg" >
+        <CardHeader className="h-[180px] mb-4 bg-no-repeat bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${bg})` }}>
         </CardHeader>
         <CardContent>
             <h2 className='text-lg font-bold text-sprimary mb-3'>{post.node.title}</h2>
