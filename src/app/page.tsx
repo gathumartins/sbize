@@ -1,6 +1,5 @@
 import HomeHero from "@/components/HomeHero";
 import HomeSect from "@/components/HomeSect";
-import Image from "next/image";
 
 export default async function Home() {
       const query = ` {

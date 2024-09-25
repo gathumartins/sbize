@@ -1,6 +1,9 @@
+'use client'
 import React from 'react'
+import {motion} from 'framer-motion';
 
 function HomeSect({data}:any) {
+    
   return (
         <section className="bg-sgray even:bg-white py-8 group">
         <article className="container flex flex-col md:flex-row place-items-center md:group-odd:flex-row-reverse gap-10">
