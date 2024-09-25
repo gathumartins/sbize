@@ -40,8 +40,10 @@ async function page() {
   const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, { headers:{'Content-Type': 'application/json'}, cache:'no-store'})
   const pageData = await res.json();
   let title:String = pageData.data.page.title
-  let bg:String = pageData.data.page.featuredImage.node.mediaItemUrl;
-
+  let bg:String = '';
+  if(pageData.data.page.featuredImage !== null){
+    bg=pageData.data.page.featuredImage.node.mediaItemUrl;
+  }
   let categories = pageData.data.cats.edges;
   let finalCats = categories.filter((c: { node: { id: string } }) => c.node.id !== "dGVybTox");
   return (

@@ -50,7 +50,10 @@ async function page({params}:any) {
   });
   const data = await res.json();
   let title = data.data.cat.name;
-  let hero = data.data.cat.categoriesFields.heroImage.node.mediaItemUrl;
+  let hero = '';
+  if(data.data.cat.categoriesFields.heroImage !== null){
+    hero =data.data.cat.categoriesFields.heroImage.node.mediaItemUrl;
+  }
   let posts =data.data.cat.posts.edges;
   let topData=data.data.cat;
   return (

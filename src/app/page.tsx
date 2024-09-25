@@ -38,7 +38,10 @@ let res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURICompone
 
 let pageData = await res.json();
 let title:any = pageData.data.page.homeTitle.customTitle;
-let hero:any =pageData.data.page.featuredImage.node.mediaItemUrl;
+let hero:any = '';
+if(pageData.data.page.featuredImage !== null){
+  hero=pageData.data.page.featuredImage.node.mediaItemUrl;
+}
 let subT:any =pageData.data.page.content;
 let homeBlocks:any = pageData.data.page.homePage.sectionTitle
   return (

@@ -38,7 +38,10 @@ import Hero from '@/components/Hero'
     const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, {headers: {'Content-Type': 'application/json'}, cache:'no-store'});
     const pageData = await res.json();
     let data = pageData.data.page;
-    let bg = data.featuredImage.node.mediaItemUrl;
+    let bg = '';
+    if(data.featuredImage !== null){
+      bg=data.featuredImage.node.mediaItemUrl;
+    }
     let blockList = data.explorePage.exploreSections;
     return (
       <main>
