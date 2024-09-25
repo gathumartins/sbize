@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${sourceSans.variable} antialiased`}
       >
         <Navbar/>
-        {children}
+          {children}
         <Footer/>
       </body>
     </html>

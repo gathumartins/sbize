@@ -35,7 +35,7 @@ import Hero from '@/components/Hero'
 }
     `
 
-    const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, {headers: {'Content-Type': 'application/json'}, cache:'no-store'});
+    const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, {headers: {'Content-Type': 'application/json'}});
     const pageData = await res.json();
     let data = pageData.data.page;
     let bg = '';

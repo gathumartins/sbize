@@ -37,7 +37,7 @@ async function page() {
   }
 }
   `
-  const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, { headers:{'Content-Type': 'application/json'}, cache:'no-store'})
+  const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, { headers:{'Content-Type': 'application/json'}})
   const pageData = await res.json();
   let title:String = pageData.data.page.title
   let bg:String = '';

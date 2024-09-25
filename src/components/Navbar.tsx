@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
 import {
   Sheet,

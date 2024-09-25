@@ -34,7 +34,7 @@ export default async function Home() {
   }
 }`
 
-let res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, {headers: {'Content-Type': 'application/json'}, cache:'no-store'});
+let res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, {headers: {'Content-Type': 'application/json'}});
 
 let pageData = await res.json();
 let title:any = pageData.data.page.homeTitle.customTitle;
