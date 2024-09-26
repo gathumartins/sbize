@@ -19,6 +19,9 @@ const config: Config = {
       mainFont: ['var(--font-sourceSans)']
     },
   	extend: {
+      screens: {
+        'xs': '400px',
+      },
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',

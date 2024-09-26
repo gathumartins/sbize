@@ -33,7 +33,7 @@ function Footer() {
     <footer className="font-mainFont">
         <article className="">
             <section className="footerTop bg-sdarkblue py-8">
-                <div className="container gap-y-6 grid max-w-[450px]:grid-cols-1 grid-cols-2 lg:grid-cols-4  [&_h6]:text-sorange [&_h6]:uppercase [&_h6]:mb-2 [&_h6]:text-lg [&_h6]:font-semibold">
+                <div className="container gap-y-6 grid xs:grid-cols-2 lg:grid-cols-4  [&_h6]:text-sorange [&_h6]:uppercase [&_h6]:mb-2 [&_h6]:text-lg [&_h6]:font-semibold">
                     <div>
                         <h6>quick links</h6>
                         <ul className='text-white'>
@@ -93,7 +93,7 @@ function Footer() {
                     </div>
                     <div>
                         <h6>newsletter</h6>
-                        <p className='text-white mb-4 text-lg'>Subscribe to our newsletter<br/> & stay updated</p>
+                        <p className='text-white mb-4 text-lg'>Subscribe to our newsletter<br className='xs:inline-block hidden'/> & stay updated</p>
                         <form action="" className='flex flex-col gap-2 lg:max-w-[320px]'>
                             <section className="flex flex-col gap-4 lg:flex-row lg:gap-2">
                                   <label htmlFor="email" className='sr-only'>Email Address</label>
