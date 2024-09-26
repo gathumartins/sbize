@@ -13,7 +13,7 @@ function PostCard({post, catSlug}:any) {
       bg = post.node.featuredImage.node.mediaItemUrl;
     }
   return (
-        <Card className='flex flex-col justify-start'>
+        <Card className='flex flex-col justify-start shadow-xl'>
         <CardHeader className="h-[180px] mb-4 bg-no-repeat bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${bg})` }}>
         </CardHeader>
         <CardContent className='flex-grow'>

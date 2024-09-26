@@ -13,7 +13,7 @@ function CohortCard({data}:any) {
       bg=data.node.categoriesFields.featuredImage.node.mediaItemUrl;
     }
   return (
-    <Card>
+    <Card className='shadow-xl'>
         <CardHeader className="h-[180px] mb-4 bg-no-repeat bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${bg})` }}>
         </CardHeader>
         <CardContent>

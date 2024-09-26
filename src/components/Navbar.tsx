@@ -17,7 +17,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   
   return (
-    <header className="bg-background h-[80px] sticky top-0 shadow-sm z-10">
+    <header className="bg-background h-[80px] sticky top-0 shadow-md z-10">
         <div className="container flex justify-between py-[5px]">
         <img src="/images/logo.webp" alt="S-bize header logo" className="h-[70px] inline-block"/>
         <nav className="lg:flex justify-between flex-grow place-items-center hidden">
