@@ -24,9 +24,11 @@ export default function RootLayout({
       <body
         className={`${sourceSans.variable} antialiased`}
       >
-        <Navbar/>
+       <main id="top">
+         <Navbar/>
           {children}
         <Footer/>
+       </main>
       </body>
     </html>
   );
