@@ -88,7 +88,7 @@ function Footer() {
                         <ul className="grid grid-cols-1 gap-y-4">
                             <li><Link href="https://www.nairobits.com" className='inline-block min-w-[140px] orangeBtn' target="_blank">NairoBits</Link></li>
                             <li><Link href="https://www.nairobits.com/donate" className='inline-block min-w-[140px] accentBtn' target="_blank">Donate</Link></li>
-                            <li><Link href="https://www.nairobits.com/apply" className='inline-block min-w-[140px] rangeBtnSec' target="_blank">Apply</Link></li>
+                            <li><Link href="https://forms.gle/QKHVTpZZAcxdnfjC7" className='inline-block min-w-[140px] rangeBtnSec' target="_blank">Apply</Link></li>
                         </ul>
                     </div>
                     <div>

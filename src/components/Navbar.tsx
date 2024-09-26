@@ -34,7 +34,7 @@ function Navbar() {
             </ul>
             <ul className="grid grid-cols-2 gap-x-4 place-items-center">
                 <li><Link href="https://www.nairobits.com" className='inline-block min-w-[120px] orangeBtn' target="_blank">NairoBits</Link></li>
-                <li><Link href="https://www.nairobits.com/apply" className='inline-block min-w-[120px] accentBtn' target="_blank">Apply</Link></li>
+                <li><Link href="https://forms.gle/QKHVTpZZAcxdnfjC7" className='inline-block min-w-[120px] accentBtn' target="_blank">Apply</Link></li>
             </ul>
         </nav>
         <Sheet open={open} onOpenChange={setOpen}>
