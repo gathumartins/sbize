@@ -13,14 +13,14 @@ function PostCard({post, catSlug}:any) {
       bg = post.node.featuredImage.node.mediaItemUrl;
     }
   return (
-        <Card>
+        <Card className='flex flex-col justify-start'>
         <CardHeader className="h-[180px] mb-4 bg-no-repeat bg-cover bg-center rounded-t-lg" style={{ backgroundImage: `url(${bg})` }}>
         </CardHeader>
-        <CardContent>
+        <CardContent className='flex-grow'>
             <h2 className='text-lg font-bold text-sprimary mb-3'>{post.node.title}</h2>
             <div className='line-clamp-3 text-foreground text-lg [&_h2]:hidden' dangerouslySetInnerHTML={{__html:post.node.content}}></div>
         </CardContent>
-        <CardFooter className="flex">
+        <CardFooter>
             <Link href={`/cohorts/${catSlug}/${post.node.slug}`} className='inline-block orangeBtn w-[200px] place-self-end'>View Organisation</Link>
         </CardFooter>
     </Card>
