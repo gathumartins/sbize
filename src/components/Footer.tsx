@@ -94,7 +94,7 @@ function Footer() {
                     <div>
                         <h6>newsletter</h6>
                         <p className='text-white mb-4 text-lg'>Subscribe to our newsletter<br className='xs:inline-block hidden'/> & stay updated</p>
-                        <form action="" className='flex flex-col gap-2 lg:max-w-[320px]'>
+                        <form action="" className='flex flex-col gap-2 sm:max-w-[300px]'>
                             <section className="flex flex-col gap-4 lg:flex-row lg:gap-2">
                                   <label htmlFor="email" className='sr-only'>Email Address</label>
                                     <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email Address' className='p-2 focus:ring-0 focus:shadow-none placeholder:text-sdarkblue text-foreground rounded-lg flex-grow'/>
