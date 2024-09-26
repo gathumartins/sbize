@@ -24,6 +24,7 @@ async function page({params}:any) {
   const res = await fetch(`${process.env.WORDPRESS_API_URL}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
+    next:{revalidate:60},
     body: JSON.stringify({ query, variables }),
   });
   const data = await res.json();
