@@ -33,22 +33,18 @@ function Footer() {
     <footer className="font-mainFont">
         <article className="">
             <section className="footerTop bg-sdarkblue py-8">
-                <div className="container gap-y-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  [&_h6]:text-sorange [&_h6]:uppercase [&_h6]:mb-2 [&_h6]:text-lg [&_h6]:font-semibold">
+                <div className="container gap-y-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4  [&_h6]:text-sorange [&_h6]:uppercase [&_h6]:mb-2 [&_h6]:text-lg [&_h6]:font-semibold">
                     <div>
                         <h6>quick links</h6>
                         <ul className='text-white'>
                             <li>
-                                <Link href="/" className='text-white text-base hover:text-sorange uppercase leading-8'>Home</Link>
+                                <Link href="/" className='text-white text-base hover:text-sorange uppercase leading-[50px]'>Home</Link>
                             </li>
                             <li>
-                                <Link href="/cohorts" className='text-white text-base hover:text-sorange uppercase leading-8'>Meet The Cohorts</Link>
+                                <Link href="/cohorts" className='text-white text-base hover:text-sorange uppercase leading-[50px]'>Meet The Cohorts</Link>
                             </li>
                             <li>
-                                <Link href="/explore" className='text-white text-base hover:text-sorange uppercase leading-8'>Explore Kenya</Link>
-                            </li>
-
-                            <li>
-                                <Link href="/" className='text-white text-base hover:text-sorange uppercase leading-8'>Contact Us</Link>
+                                <Link href="/explore" className='text-white text-base hover:text-sorange uppercase leading-[50px]'>Explore Kenya</Link>
                             </li>
                         </ul>
                     </div>
@@ -85,7 +81,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <ul className="grid grid-cols-1 gap-y-4">
+                        <ul className="grid grid-cols-1 gap-y-8 sm:gap-y-4">
                             <li><Link href="https://www.nairobits.com" className='inline-block min-w-[140px] orangeBtn' target="_blank">NairoBits</Link></li>
                             <li><Link href="https://www.nairobits.com/donate" className='inline-block min-w-[140px] accentBtn' target="_blank">Donate</Link></li>
                             <li><Link href="https://www.nairobits.com/apply" className='inline-block min-w-[140px] rangeBtnSec' target="_blank">Apply</Link></li>
@@ -95,7 +91,7 @@ function Footer() {
                         <h6>newsletter</h6>
                         <p className='text-white mb-4 text-lg'>Subscribe to our newsletter<br/> & stay updated</p>
                         <form action="" className='flex flex-col gap-2'>
-                            <section className="flex flex-row gap-2">
+                            <section className="flex flex-col sm:flex-row gap-2">
                                   <label htmlFor="email" className='sr-only'>Email Address</label>
                                     <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email Address' className='p-2 focus:ring-0 focus:shadow-none placeholder:text-sdarkblue text-foreground rounded-lg'/>
                                     <input type="submit" value="Subscribe" className='orangeBtn' disabled={state === "Loading"} onClick={subscribe}/>
@@ -116,7 +112,7 @@ function Footer() {
             </section>
             <section className="bg-sprimary py-4">
                 <div className="container text-center">
-                    <p className='text-white font-mainFont'>Copyright &copy; {new Date().getFullYear()} <Link href="https://www.nairobits.com" target="_blank" className="text-sorange font-semibold hover:text-saccent">NairoBits Trust. </Link> All Rights Reserved</p>
+                    <p className='text-white text-base sm:text-lg font-mainFont'>Copyright &copy; {new Date().getFullYear()} <Link href="https://www.nairobits.com" target="_blank" className="text-sorange font-semibold hover:text-saccent">NairoBits Trust. </Link> All Rights Reserved</p>
                 </div>
             </section>
         </article>
