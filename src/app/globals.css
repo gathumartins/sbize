@@ -25,11 +25,12 @@
 }
 * {
   scroll-behavior: smooth;
+  font-family: "Source Sans 3", sans-serif !important;
 }
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans 3", sans-serif !important;
 }
 
 @layer utilities {
