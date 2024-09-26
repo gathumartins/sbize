@@ -33,7 +33,7 @@ function Footer() {
     <footer className="font-mainFont">
         <article className="">
             <section className="footerTop bg-sdarkblue py-8">
-                <div className="container gap-y-6 grid grid-cols-2 lg:grid-cols-4  [&_h6]:text-sorange [&_h6]:uppercase [&_h6]:mb-2 [&_h6]:text-lg [&_h6]:font-semibold">
+                <div className="container gap-y-6 grid max-w-[450px]:grid-cols-1 grid-cols-2 lg:grid-cols-4  [&_h6]:text-sorange [&_h6]:uppercase [&_h6]:mb-2 [&_h6]:text-lg [&_h6]:font-semibold">
                     <div>
                         <h6>quick links</h6>
                         <ul className='text-white'>
@@ -51,7 +51,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div    >
                         <h6>contact us</h6>
                         <ul className='leading-8 text-base'>
                             <li><Link href="mailto:info@nairobits.com" className="text-white hover:text-sorange">info@nairobits.com</Link></li>
