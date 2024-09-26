@@ -20,8 +20,8 @@ function PostCard({post, catSlug}:any) {
             <h2 className='text-lg font-bold text-sprimary mb-3'>{post.node.title}</h2>
             <div className='line-clamp-3 text-foreground text-lg [&_h2]:hidden' dangerouslySetInnerHTML={{__html:post.node.content}}></div>
         </CardContent>
-        <CardFooter>
-            <Link href={`/cohorts/${catSlug}/${post.node.slug}`} className='inline-block orangeBtn w-[160px]'>View Cohort</Link>
+        <CardFooter className="flex">
+            <Link href={`/cohorts/${catSlug}/${post.node.slug}`} className='inline-block orangeBtn w-[200px] place-self-end'>View Organisation</Link>
         </CardFooter>
     </Card>
   )

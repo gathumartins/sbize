@@ -6,7 +6,7 @@ function Explore({value}:any) {
     <section className="bg-sgray even:bg-white py-8 group">
         <article className="container flex flex-col md:flex-row place-items-center md:group-even:flex-row-reverse gap-10">
         <div className="w-full md:w-1/2 md:group-even:w-2/3 [&_p]:font-normal [&_p]:text-lg [&_p]:text-foreground">
-            <h2 className="after:content-[''] after:top-8 after:left-0 after:w-[180px] after:rounded after:h-[5px] after:bg-sorange relative after:absolute mb-8 text-2xl font-bold text-sprimary capitalize">{value.sectionTitle}</h2>
+            <h2 className="after:content-[''] after:top-8 after:left-0 after:w-[180px] after:rounded after:h-[5px] after:bg-sorange relative after:absolute mb-8 text-3xl font-bold text-sprimary capitalize">{value.sectionTitle}</h2>
             <div dangerouslySetInnerHTML={{__html:value.sectionContent}}></div>
             {value.sectionLink !== null &&(
               <Link href={value.sectionLink} className="orangeBtn w-[180px] inline-block mt-7" target='_blank'>Explore More</Link>
