@@ -17,7 +17,7 @@ async function page() {
     }
     content
   }
-  cats:categories {
+  cats:categories(where: {order: DESC}){
     edges {
       node {
         id
@@ -36,7 +36,7 @@ async function page() {
     }
   }
 }
-  `
+  `;
   const res = await fetch(`${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`, { headers:{'Content-Type': 'application/json'}, next:{revalidate:60}})
   const pageData = await res.json();
   let title:String = pageData.data.page.title
