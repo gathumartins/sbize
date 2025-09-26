@@ -160,7 +160,7 @@ function Footer() {
                 <li>
                   <Link
                     href="https://docs.google.com/forms/d/e/1FAIpQLSczImnZFM01BaDyHz5Vmhf149EYRczAVLqt4I_YT7vwo_MMtQ/viewform"
-                    className="inline-block min-w-[140px] rangeBtnSec"
+                    className="inline-block min-w-[140px] rangeBtnSec "
                     target="_blank"
                   >
                     Apply
