@@ -219,7 +219,7 @@ function Footer() {
               <Link
                 href="https://www.nairobits.com"
                 target="_blank"
-                className="text-sorange font-semibold hover:text-saccent"
+                className="text-sorange font-semibold hover:text-sgray hover:underline"
               >
                 NairoBits Trust.{" "}
               </Link>{" "}
