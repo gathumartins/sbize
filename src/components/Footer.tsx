@@ -142,7 +142,7 @@ function Footer() {
                 <li>
                   <Link
                     href="https://www.nairobits.com"
-                    className="inline-block min-w-[140px] orangeBtn"
+                    className="inline-block min-w-[140px] orangeBtnF"
                     target="_blank"
                   >
                     NairoBits
@@ -191,7 +191,7 @@ function Footer() {
                   <input
                     type="submit"
                     value="Subscribe"
-                    className="orangeBtn"
+                    className="orangeBtnF"
                     disabled={state === "Loading"}
                     onClick={subscribe}
                   />

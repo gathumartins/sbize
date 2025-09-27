@@ -64,7 +64,7 @@ function Navbar() {
             <li>
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSczImnZFM01BaDyHz5Vmhf149EYRczAVLqt4I_YT7vwo_MMtQ/viewform"
-                className="inline-block min-w-[120px] accentBtn"
+                className="inline-block min-w-[120px] accentBtnT"
                 target="_blank"
               >
                 Apply
@@ -131,7 +131,7 @@ function Navbar() {
                   <Link
                     href="https://www.nairobits.com/apply"
                     target="_blank"
-                    className="inline-block min-w-[180px] accentBtn text-lg"
+                    className="inline-block min-w-[180px] accentBtnT text-lg"
                     onClick={() => setOpen(false)}
                   >
                     Apply

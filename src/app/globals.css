@@ -44,12 +44,19 @@ body {
     --radius: 0.5rem;
   }
   .orangeBtn {
-   @apply bg-sorange py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-transparent text-white hover:text-sorange capitalize cursor-pointer
+   @apply bg-sorange py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-black text-black hover:text-background hover:border-foreground font-semibold capitalize cursor-pointer
   }
   .accentBtn {
-    @apply bg-saccent py-2 px-4 rounded-md text-center border-2 border-saccent hover:bg-transparent text-white hover:text-saccent capitalize cursor-pointer
+    @apply bg-saccent py-2 px-4 rounded-md text-center border-2 border-saccent hover:bg-transparent text-black font-semibold hover:text-saccent capitalize cursor-pointer
   }
+  
   .rangeBtnSec{
-    @apply bg-transparent py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-sorange text-sorange hover:text-white capitalize cursor-pointer
+    @apply bg-transparent py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-sorange text-sorange font-semibold hover:text-black capitalize cursor-pointer
+  }
+  .accentBtnT {
+    @apply bg-foreground py-2 px-4 rounded-md text-center border-2 border-foreground hover:bg-sorange text-sorange font-semibold hover:text-black hover:border-sorange capitalize cursor-pointer
+  }
+  .orangeBtnF {
+    @apply bg-sorange py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-background text-black hover:text-foreground hover:border-foreground font-semibold capitalize cursor-pointer
   }
 }
