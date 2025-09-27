@@ -29,7 +29,7 @@ function Navbar() {
             <li>
               <Link
                 href="/"
-                className="text-sdarkblue hover:text-sorange text-md font-mediumc uppercase"
+                className="text-sdarkblue hover:text-sprimary text-md font-semibold uppercase"
               >
                 Home
               </Link>
@@ -37,7 +37,7 @@ function Navbar() {
             <li>
               <Link
                 href="/cohorts"
-                className="text-sdarkblue hover:text-sorange text-md font-mediumc uppercase"
+                className="text-sdarkblue hover:text-sprimary text-md font-semibold uppercase"
               >
                 Meet The Cohorts
               </Link>
@@ -45,7 +45,7 @@ function Navbar() {
             <li>
               <Link
                 href="/explore"
-                className="text-sdarkblue hover:text-sorange text-md font-mediumc uppercase"
+                className="text-sdarkblue hover:text-sprimary font-semibold text-md uppercase"
               >
                 Explore Kenya
               </Link>
@@ -55,7 +55,7 @@ function Navbar() {
             <li>
               <Link
                 href="https://www.nairobits.com"
-                className="inline-block min-w-[120px] orangeBtn"
+                className="inline-block min-w-[120px] orangeBtnP"
                 target="_blank"
               >
                 NairoBits
@@ -93,7 +93,7 @@ function Navbar() {
                 <li>
                   <Link
                     href="/"
-                    className="text-sdarkblue hover:text-sorange text-lg font-semibold uppercase"
+                    className="text-sdarkblue hover:text-sprimary text-lg font-semibold uppercase"
                     onClick={() => setOpen(false)}
                   >
                     Home
@@ -102,7 +102,7 @@ function Navbar() {
                 <li>
                   <Link
                     href="/cohorts"
-                    className="text-sdarkblue hover:text-sorange text-lg font-semibold uppercase"
+                    className="text-sdarkblue hover:text-sprimary text-lg font-semibold uppercase"
                     onClick={() => setOpen(false)}
                   >
                     Meet The Cohorts
@@ -111,7 +111,7 @@ function Navbar() {
                 <li>
                   <Link
                     href="/explore"
-                    className="text-sdarkblue hover:text-sorange text-lg font-semibold uppercase"
+                    className="text-sdarkblue hover:text-sprimary text-lg font-semibold uppercase"
                     onClick={() => setOpen(false)}
                   >
                     Explore Kenya
@@ -121,7 +121,7 @@ function Navbar() {
                   <Link
                     href="https://www.nairobits.com"
                     target="_blank"
-                    className="inline-block min-w-[180px] orangeBtn text-lg"
+                    className="inline-block min-w-[180px] orangeBtnP text-lg"
                     onClick={() => setOpen(false)}
                   >
                     NairoBits

@@ -43,6 +43,9 @@ body {
   :root {
     --radius: 0.5rem;
   }
+  .orangeBtnP {
+    @apply bg-sprimary py-2 px-4 rounded-md text-center border-2 border-sprimary hover:bg-black text-background hover:text-background hover:border-foreground font-semibold capitalize cursor-pointer
+  }
   .orangeBtn {
    @apply bg-sorange py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-black text-black hover:text-background hover:border-foreground font-semibold capitalize cursor-pointer
   }
@@ -54,7 +57,7 @@ body {
     @apply bg-transparent py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-sorange text-sorange font-semibold hover:text-black capitalize cursor-pointer
   }
   .accentBtnT {
-    @apply bg-foreground py-2 px-4 rounded-md text-center border-2 border-foreground hover:bg-sorange text-sorange font-semibold hover:text-black hover:border-sorange capitalize cursor-pointer
+    @apply bg-foreground py-2 px-4 rounded-md text-center border-2 border-foreground hover:bg-sprimary text-sorange font-semibold hover:text-background hover:border-sprimary capitalize cursor-pointer
   }
   .orangeBtnF {
     @apply bg-sorange py-2 px-4 rounded-md text-center border-2 border-sorange hover:bg-background text-black hover:text-foreground hover:border-foreground font-semibold capitalize cursor-pointer
