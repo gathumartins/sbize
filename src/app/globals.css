@@ -32,7 +32,9 @@ body {
   background: var(--background);
   font-family: "Source Sans 3", sans-serif !important;
 }
-
+.container{
+  padding: 0px 20px;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
